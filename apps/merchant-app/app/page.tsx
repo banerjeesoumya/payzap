@@ -1,12 +1,12 @@
-import Image from "next/image";
-import { Button } from "@repo/ui/button";
-import styles from "./page.module.css";
-import { PrismaClient } from "@repo/db/client";
+"use client"
 
-export default function Home() {
+import { useBalance } from "@repo/store/useBalance";
+
+export default function() {
+  const balance = useBalance();
   return (
-    <div className="text-2xl">
-      Hello from the Merchant App
+    <div>
+      hi there {balance}
     </div>
-  );
-}
+  )
+} 
