@@ -7,7 +7,7 @@ export default function Layout({children} : {children: React.ReactNode}) : JSX.E
                 <div>
                     <SidebarItem href={"/dashboard"} icon = {<HomeIcon />} title = "Home" />
                     <SidebarItem href={"/transfer"} icon = {<TransferIcon />} title="Transfer" />
-                    <SidebarItem href={"/transaction"} icon = {<TransactionIcon />} title = "Transaction" />
+                    <SidebarItem href={"/transactions"} icon = {<TransactionIcon />} title = "Transaction" />
                 </div>
             </div>
             {children}
